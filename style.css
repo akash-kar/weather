@@ -8,7 +8,7 @@ header {
 
 body {
     /*font-family: Arial, sans-serif;
-    background-image: url('images/bg.jpg');
+    background-image: url('bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;*/
     margin: 0;
@@ -70,7 +70,7 @@ button:hover {
 .weather-info {
     display: none;
     background-color: rgba(255, 255, 255, 0.9);
-    background-image: url('images/bg1.jpg');
+    background-image: url('bg1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -120,7 +120,7 @@ button:hover {
     flex: 0 0 calc(18% - 20px); /* Adjust the width as needed */
     margin: 10px;
     padding: 10px;
-    background-image: url('images/days.jpg');
+    background-image: url('days.jpg');
     background-repeat: no-repeat;
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -139,7 +139,7 @@ button:hover {
 
     body {
         font-family: Arial, sans-serif;
-        background-image: url('images/bgm.jpg');
+        background-image: url('bgm.jpg');
         background-size:auto;
         background-repeat:no-repeat;
     }
@@ -210,7 +210,7 @@ button:hover {
         flex: 0 0 calc(18% - 20px); /* Adjust the width as needed */
         margin: 10px;
         padding: 10px;
-        background-image: url('images/days.jpg');
+        background-image: url('days.jpg');
         background-repeat: no-repeat;
         border-radius: 20px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -226,7 +226,7 @@ button:hover {
     .weather-info {
         display: none;
         background-color: rgba(255, 255, 255, 0.9);
-        background-image: url('images/bg1.jpg');
+        background-image: url('bg1.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         text-align: center;
