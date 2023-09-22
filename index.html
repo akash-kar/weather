@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name" required>
+            <button id="search-button">Search</button>
+        </div>
+        <div class="weather-info">
+            <h2 id="city-name"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <div class="humidity" id="humidity"></div>
+
+        </div>
+    </div>
+    <section class="forecast">
+        <h2>5-Days Weather Forecast</h2>
+        <div class="forecast-list" id="forecast-list">
+            <!-- Forecast items will be dynamically generated here -->
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
+    <script src="script.js"></script>
+
+    <video autoplay muted loop id="background-video">
+        <source src="images/bgvdo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+</body>
+</html>
