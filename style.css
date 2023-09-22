@@ -1,0 +1,256 @@
+/* Your CSS styles go here */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('header-background.jpg');
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+body {
+    /*font-family: Arial, sans-serif;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Place the video behind other content */
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('images/bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#temperature {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#temperature {
+    font-size: 30px;
+}
+
+#description {
+    
+    margin-top: 10px;
+}
+/* Your existing CSS styles */
+
+/* Styling for the forecast section */
+.forecast {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.forecast h2 {
+    
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.forecast-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.forecast-item {
+    flex: 0 0 calc(18% - 20px); /* Adjust the width as needed */
+    margin: 10px;
+    padding: 10px;
+    background-image: url('images/days.jpg');
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.forecast-item div {
+    margin-bottom: 30px;
+    
+}
+
+@media (max-width: 780px) {
+    .forecast-item {
+        flex: 0 0 calc(30% - 20px); /* Adjust the width for smaller screens */
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('images/bgm.jpg');
+        background-size:auto;
+        background-repeat:no-repeat;
+    }
+    .container {
+        max-width: 275px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.452);
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .search-container {
+        margin-bottom: 10px;
+        margin-top: 5px;
+        text-align: center;
+        
+        
+    }
+    
+    input[type="text"] {
+        padding: 7px;
+        width: 50%;
+        border: 6px solid #ccc;
+        border-radius: 50px;
+        outline: none;
+    }
+    button {
+        padding: 8px 17px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .forecast {
+        max-width: 300px;
+        margin: 20px auto;
+        margin-top: 30px;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .forecast h2 {
+        
+        font-size: 22px;
+        text-decoration: none;
+        margin-bottom: 19px;
+    }
+    
+    .forecast-list {
+        display:grid;
+        justify-content:center;
+        align-items: center;
+        overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    }
+    
+    .forecast-item {
+        flex: 0 0 calc(18% - 20px); /* Adjust the width as needed */
+        margin: 10px;
+        padding: 10px;
+        background-image: url('images/days.jpg');
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    
+    .forecast-item div {
+        margin-bottom: 9px;
+        margin-left: 70px;
+        
+        
+    }
+    .weather-info {
+        display: none;
+        background-color: rgba(255, 255, 255, 0.9);
+        background-image: url('images/bg1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    #temperature {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#temperature {
+    font-size: 24px;
+}
+
+#description {
+    
+    margin-top: 10px;
+    font-size: 25px;
+}
+.humidity
+{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+}
